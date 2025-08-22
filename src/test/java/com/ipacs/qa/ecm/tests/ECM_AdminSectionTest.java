@@ -27,7 +27,7 @@ public class ECM_AdminSectionTest extends TestBase {
 
 	}
 
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	// Scenario: Validate IPACS_ECM Login
 	public void verifyIpacsLoginPage() {
 
@@ -41,7 +41,7 @@ public class ECM_AdminSectionTest extends TestBase {
 		Assert.assertEquals(actualTitle, expectedTitle, "The page title doesn't match the expected value!");
 	}
 
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	// Scenario: Validate Admin Section Link
 	public void verifyAdminSectionLink() {
 		ecm_AdminSection.login();
@@ -50,7 +50,7 @@ public class ECM_AdminSectionTest extends TestBase {
 
 	}
 
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	// Scenario: Validate Add new user Page UI
 	public void verifyAddNewUserPageUI() {
 		ecm_AdminSection.login();
@@ -61,7 +61,7 @@ public class ECM_AdminSectionTest extends TestBase {
 
 	}
 
-	//@Test(priority = 4)
+	@Test(priority = 4)
 	// Scenario: Validate Add new user functionality
 	public void verifyAddNewUserFunctionality() {
 		ecm_AdminSection.login();
@@ -72,7 +72,7 @@ public class ECM_AdminSectionTest extends TestBase {
 		ecm_AdminSection.verifyNewUserAdded();
 	}
 
-	//@Test(priority = 5)
+	@Test(priority = 5)
 	// Scenario: Validate Edit User functionality
 	public void verifyEditUserFunctionality() {
 		ecm_AdminSection.login();
@@ -82,7 +82,7 @@ public class ECM_AdminSectionTest extends TestBase {
 		ecm_AdminSection.verifyUserEdited();
 	}
 
-	//@Test(priority = 6)
+	@Test(priority = 6)
 	// Scenario: User performs sorting of all columns present on the user Details
 	// page (ascending/descending )
 
@@ -95,7 +95,7 @@ public class ECM_AdminSectionTest extends TestBase {
 
 	}
 
-	//@Test(priority = 7)
+	@Test(priority = 7)
 	// Scenario: Validate show entries on User Details page
 	public void verifyShowEntriesOnUserDetailsPage() {
 		ecm_AdminSection.login();
@@ -106,7 +106,7 @@ public class ECM_AdminSectionTest extends TestBase {
 
 	}
 
-	//@Test(priority = 8)
+	@Test(priority = 8)
 	// Scenario: Validate Search User functionality
 	public void verifySearchUserFunctionality() {
 		ecm_AdminSection.login();
@@ -116,7 +116,7 @@ public class ECM_AdminSectionTest extends TestBase {
 		ecm_AdminSection.verifySearchUser();
 	}
 
-	//@Test(priority = 9)
+	@Test(priority = 9)
 	// Scenario:User verifies Fields in User Logs Page under IPACS Administration
 	public void verifyUserLogsPageFields() {
 		ecm_AdminSection.login();
@@ -127,7 +127,7 @@ public class ECM_AdminSectionTest extends TestBase {
 		WaitUtil.waitForSeconds(3);
 	}
 
-	//@Test(priority = 10)
+	@Test(priority = 10)
 	// Scenario:User verifies Search box in User Logs Page under IPACS
 	// Administration
 	public void verifySearchBoxInUserLogsPage() {
@@ -139,7 +139,7 @@ public class ECM_AdminSectionTest extends TestBase {
 		WaitUtil.waitForSeconds(3);
 	}
 
-	//@Test(priority = 11)
+	@Test(priority = 11)
 	// Scenario:User verifies Fields in User Login History under IPACS
 	// Administration
 	public void verifyUserLoginHistoryFields() {
@@ -163,7 +163,7 @@ public class ECM_AdminSectionTest extends TestBase {
 		WaitUtil.waitForSeconds(3);
 	}
 
-	//@Test(priority = 13)
+	@Test(priority = 13)
 	// Scenario:Edit user having roles "User"
 
 	public void verifyEditUserWithUserRole() {
@@ -176,6 +176,6 @@ public class ECM_AdminSectionTest extends TestBase {
 	}
 
 	
-	////@Test(priority = 14)
+	//@Test(priority = 14)
 	// Scenario:Edit user having roles "Admin"
 }

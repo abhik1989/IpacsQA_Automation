@@ -1,29 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="13" passed="11" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-22T16:03:18 IST" name="Default suite" finished-at="2025-08-22T16:03:49 IST" duration-ms="31554">
+  <suite started-at="2025-08-22T19:39:32 IST" name="Default suite" finished-at="2025-08-22T19:44:48 IST" duration-ms="316061">
     <groups>
     </groups>
-    <test started-at="2025-08-22T16:03:18 IST" name="Default test" finished-at="2025-08-22T16:03:49 IST" duration-ms="31554">
+    <test started-at="2025-08-22T19:39:32 IST" name="Default test" finished-at="2025-08-22T19:44:48 IST" duration-ms="316061">
       <class name="com.ipacs.qa.ecm.tests.ECM_AdminSectionTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T16:03:18 IST" name="setUp" finished-at="2025-08-22T16:03:25 IST" duration-ms="7305" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:39:33 IST" name="setUp" finished-at="2025-08-22T19:39:43 IST" duration-ms="10446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T16:03:25 IST" name="setUpPageObject" finished-at="2025-08-22T16:03:25 IST" duration-ms="50" status="PASS">
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:39:43 IST" name="setUpPageObject" finished-at="2025-08-22T19:39:43 IST" duration-ms="52" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPageObject -->
-        <test-method signature="verifySearchBoxInUserLoginHistory()[pri:12, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T16:03:25 IST" name="verifySearchBoxInUserLoginHistory" finished-at="2025-08-22T16:03:48 IST" duration-ms="23075" status="FAIL">
-          <exception class="java.lang.RuntimeException">
+        <test-method signature="verifyIpacsLoginPage()[pri:1, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:39:43 IST" name="verifyIpacsLoginPage" finished-at="2025-08-22T19:39:49 IST" duration-ms="5789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIpacsLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:39:49 IST" name="tearDown" finished-at="2025-08-22T19:39:52 IST" duration-ms="2142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:39:52 IST" name="setUp" finished-at="2025-08-22T19:39:58 IST" duration-ms="6118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:39:58 IST" name="setUpPageObject" finished-at="2025-08-22T19:39:58 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyAdminSectionLink()[pri:2, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:39:58 IST" name="verifyAdminSectionLink" finished-at="2025-08-22T19:40:02 IST" duration-ms="4036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminSectionLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:40:02 IST" name="tearDown" finished-at="2025-08-22T19:40:03 IST" duration-ms="1236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:40:03 IST" name="setUp" finished-at="2025-08-22T19:40:09 IST" duration-ms="6137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:40:09 IST" name="setUpPageObject" finished-at="2025-08-22T19:40:09 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyAddNewUserPageUI()[pri:3, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:40:09 IST" name="verifyAddNewUserPageUI" finished-at="2025-08-22T19:40:25 IST" duration-ms="15796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddNewUserPageUI -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:40:25 IST" name="tearDown" finished-at="2025-08-22T19:40:28 IST" duration-ms="2348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:40:28 IST" name="setUp" finished-at="2025-08-22T19:40:35 IST" duration-ms="7443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:40:35 IST" name="setUpPageObject" finished-at="2025-08-22T19:40:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyAddNewUserFunctionality()[pri:4, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:40:35 IST" name="verifyAddNewUserFunctionality" finished-at="2025-08-22T19:41:04 IST" duration-ms="28884" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[❌ Failed to select date for field 'startdate']]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'User profile has been added successfully.')]"}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2f7bf2e4b07c9512cf42e84977be67f9, findElement {using=xpath, value=//div[contains(text(),'User profile has been added successfully.')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\ABHISH~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64408}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64408/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f7bf2e4b07c9512cf42e84977be67f9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: ❌ Failed to select date for field 'startdate'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'User profile has been added successfully.')]"}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2f7bf2e4b07c9512cf42e84977be67f9, findElement {using=xpath, value=//div[contains(text(),'User profile has been added successfully.')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\ABHISH~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64408}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64408/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f7bf2e4b07c9512cf42e84977be67f9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at com.ipacs.qa.ecm.pages.ECM_AdminSection.verifyNewUserAdded(ECM_AdminSection.java:235)
+at com.ipacs.qa.ecm.tests.ECM_AdminSectionTest.verifyAddNewUserFunctionality(ECM_AdminSectionTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddNewUserFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:41:04 IST" name="tearDown" finished-at="2025-08-22T19:41:05 IST" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:41:05 IST" name="setUp" finished-at="2025-08-22T19:41:10 IST" duration-ms="5757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:41:10 IST" name="setUpPageObject" finished-at="2025-08-22T19:41:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyEditUserFunctionality()[pri:5, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:41:10 IST" name="verifyEditUserFunctionality" finished-at="2025-08-22T19:41:39 IST" duration-ms="28610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditUserFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:41:39 IST" name="tearDown" finished-at="2025-08-22T19:41:40 IST" duration-ms="529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:41:40 IST" name="setUp" finished-at="2025-08-22T19:41:45 IST" duration-ms="5200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:41:45 IST" name="setUpPageObject" finished-at="2025-08-22T19:41:45 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyUserDetailsSorting()[pri:6, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:41:45 IST" name="verifyUserDetailsSorting" finished-at="2025-08-22T19:42:08 IST" duration-ms="22929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserDetailsSorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:08 IST" name="tearDown" finished-at="2025-08-22T19:42:09 IST" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:09 IST" name="setUp" finished-at="2025-08-22T19:42:14 IST" duration-ms="5894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:14 IST" name="setUpPageObject" finished-at="2025-08-22T19:42:14 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyShowEntriesOnUserDetailsPage()[pri:7, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:14 IST" name="verifyShowEntriesOnUserDetailsPage" finished-at="2025-08-22T19:42:23 IST" duration-ms="8820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShowEntriesOnUserDetailsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:23 IST" name="tearDown" finished-at="2025-08-22T19:42:24 IST" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:24 IST" name="setUp" finished-at="2025-08-22T19:42:29 IST" duration-ms="5457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:29 IST" name="setUpPageObject" finished-at="2025-08-22T19:42:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifySearchUserFunctionality()[pri:8, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:29 IST" name="verifySearchUserFunctionality" finished-at="2025-08-22T19:42:41 IST" duration-ms="11150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchUserFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:41 IST" name="tearDown" finished-at="2025-08-22T19:42:43 IST" duration-ms="2190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:43 IST" name="setUp" finished-at="2025-08-22T19:42:49 IST" duration-ms="6239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:49 IST" name="setUpPageObject" finished-at="2025-08-22T19:42:49 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyUserLogsPageFields()[pri:9, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:42:49 IST" name="verifyUserLogsPageFields" finished-at="2025-08-22T19:43:04 IST" duration-ms="14685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogsPageFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:04 IST" name="tearDown" finished-at="2025-08-22T19:43:07 IST" duration-ms="2905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:07 IST" name="setUp" finished-at="2025-08-22T19:43:12 IST" duration-ms="5491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:12 IST" name="setUpPageObject" finished-at="2025-08-22T19:43:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifySearchBoxInUserLogsPage()[pri:10, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:12 IST" name="verifySearchBoxInUserLogsPage" finished-at="2025-08-22T19:43:24 IST" duration-ms="11045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBoxInUserLogsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:24 IST" name="tearDown" finished-at="2025-08-22T19:43:25 IST" duration-ms="1114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:25 IST" name="setUp" finished-at="2025-08-22T19:43:31 IST" duration-ms="6365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:31 IST" name="setUpPageObject" finished-at="2025-08-22T19:43:31 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyUserLoginHistoryFields()[pri:11, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:31 IST" name="verifyUserLoginHistoryFields" finished-at="2025-08-22T19:43:40 IST" duration-ms="9356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginHistoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:41 IST" name="tearDown" finished-at="2025-08-22T19:43:41 IST" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:41 IST" name="setUp" finished-at="2025-08-22T19:43:47 IST" duration-ms="6034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:47 IST" name="setUpPageObject" finished-at="2025-08-22T19:43:47 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifySearchBoxInUserLoginHistory()[pri:12, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:43:47 IST" name="verifySearchBoxInUserLoginHistory" finished-at="2025-08-22T19:44:25 IST" duration-ms="37575" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[❌ Failed to select date for field 'enddate']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: ❌ Failed to select date for field 'enddate'
 at com.ipacs.qa.ecm.pages.ECM_AdminSection.selectDateFromZebraDatePicker(ECM_AdminSection.java:545)
-at com.ipacs.qa.ecm.pages.ECM_AdminSection.verifySearchBoxInUserLoginHistory(ECM_AdminSection.java:473)
+at com.ipacs.qa.ecm.pages.ECM_AdminSection.verifySearchBoxInUserLoginHistory(ECM_AdminSection.java:477)
 at com.ipacs.qa.ecm.tests.ECM_AdminSectionTest.verifySearchBoxInUserLoginHistory(ECM_AdminSectionTest.java:162)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -51,8 +294,28 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Could not navigate to expected month/year: july 2025
-at com.ipacs.qa.ecm.pages.ECM_AdminSection.selectDateFromZebraDatePicker(ECM_AdminSection.java:528)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=139.0.7258.128)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aac166118da6c40fef7f1d0412c5bc43, clickElement {id=f.401B58DADA00F816BB123ED545C71B00.d.A49C3E1C2212825DEF225E2B3763DA87.e.156}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\ABHISH~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62901}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62901/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aac166118da6c40fef7f1d0412c5bc43)] -> css selector: td.dp_next]
+Session ID: aac166118da6c40fef7f1d0412c5bc43
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.ipacs.qa.ecm.pages.ECM_AdminSection.selectDateFromZebraDatePicker(ECM_AdminSection.java:523)
 ... 28 more
 ]]>
             </full-stacktrace>
@@ -60,7 +323,23 @@ at com.ipacs.qa.ecm.pages.ECM_AdminSection.selectDateFromZebraDatePicker(ECM_Adm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBoxInUserLoginHistory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T16:03:49 IST" name="tearDown" finished-at="2025-08-22T16:03:49 IST" duration-ms="588" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:44:25 IST" name="tearDown" finished-at="2025-08-22T19:44:26 IST" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:44:26 IST" name="setUp" finished-at="2025-08-22T19:44:31 IST" duration-ms="5332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPageObject()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:44:31 IST" name="setUpPageObject" finished-at="2025-08-22T19:44:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method signature="verifyEditUserWithUserRole()[pri:13, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:44:31 IST" name="verifyEditUserWithUserRole" finished-at="2025-08-22T19:44:48 IST" duration-ms="16552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditUserWithUserRole -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipacs.qa.ecm.tests.ECM_AdminSectionTest@6150c3ec]" started-at="2025-08-22T19:44:48 IST" name="tearDown" finished-at="2025-08-22T19:44:48 IST" duration-ms="701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
