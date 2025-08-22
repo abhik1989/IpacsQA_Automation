@@ -2,40 +2,45 @@ package com.ipacs.qa.utilities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+import java.time.LocalDate;
+import java.time.format.TextStyle;
+import java.util.Locale;
 
 public class CalendarUtil {
-	
-	 /**
-     * Selects a date from a calendar widget.
-     *
-     * @param driver         WebDriver instance
-     * @param dateFieldXpath Xpath of the date input field (to open calendar)
-     * @param day            Day (e.g., "03")
-     * @param month          Month name (e.g., "June")
-     * @param year           Year (e.g., "2025")
-     */
-	
-	
-    public static void selectDateFromCalendar(WebDriver driver, String dateFieldXpath, String day, String month, String year) {
-        // Open the calendar
-        WebElement dateField = driver.findElement(By.xpath(dateFieldXpath));
-        dateField.click();
+    private WebDriver driver;
 
-        // Select year
-        WebElement yearDropdown = driver.findElement(By.xpath("//select[contains(@class, 'year')]"));
-        Select yearSelect = new Select(yearDropdown);
-        yearSelect.selectByVisibleText(year);
+    public CalendarUtil(WebDriver driver) {
+        this.driver = driver;
+    }
 
-        // Select month
-        WebElement monthDropdown = driver.findElement(By.xpath("//select[contains(@class, 'month')]"));
-        Select monthSelect = new Select(monthDropdown);
-        monthSelect.selectByVisibleText(month);
+    public void selectDate(By calendarIconLocator, LocalDate targetDate) {
+        // Click the calendar icon to open the calendar
+        driver.findElement(calendarIconLocator).click();
 
-        // Select day (some calendars may need td/a adjustment based on HTML)
-        driver.findElement(By.xpath("//td[not(contains(@class,'ui-datepicker-other-month'))]/a[text()='" + Integer.parseInt(day) + "']")).click();
+        String monthYear = targetDate.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH) + ", " + targetDate.getYear();
+
+        while (true) {
+            String displayedMonthYear = driver.findElement(By.cssSelector(".calendar .rdtPicker .rdtMonth")).getText();
+
+            if (displayedMonthYear.equalsIgnoreCase(monthYear)) {
+                break;
+            }
+
+            // Navigate to correct month
+            if (targetDate.isBefore(LocalDate.now())) {
+                driver.findElement(By.cssSelector(".rdtPrev")).click();
+            } else {
+                driver.findElement(By.cssSelector(".rdtNext")).click();
+            }
+        }
+
+        // Select the day
+        String dayLocator = String.format("//td[not(contains(@class, 'rdtDisabled')) and text()='%d']", targetDate.getDayOfMonth());
+        driver.findElement(By.xpath(dayLocator)).click();
+    }
+
+    public void selectDateRange(By startCalendarIcon, By endCalendarIcon, LocalDate startDate, LocalDate endDate) {
+        selectDate(startCalendarIcon, startDate);
+        selectDate(endCalendarIcon, endDate);
     }
 }
-
-

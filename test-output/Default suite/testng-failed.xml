@@ -5,9 +5,9 @@
     <classes>
       <class name="com.ipacs.qa.ecm.tests.ECM_AdminSectionTest">
         <methods>
-          <include name="verifyAddNewUserFunctionality"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifySearchBoxInUserLoginHistory"/>
           <include name="setUpPageObject"/>
         </methods>
       </class> <!-- com.ipacs.qa.ecm.tests.ECM_AdminSectionTest -->

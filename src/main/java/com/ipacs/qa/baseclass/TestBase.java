@@ -117,6 +117,7 @@ public class TestBase {
         }
         return false;
     }
+    
 
     /**
      * Clears the download directory by deleting all files within it.

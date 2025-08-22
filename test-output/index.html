@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\abhishek.kumar\AppData\Local\Temp\testng-eclipse-222535360\testng-customsuite.xml</span>
+                    <span>C:\Users\abhishek.kumar\AppData\Local\Temp\testng-eclipse-993416572\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.ipacs.qa.ecm.tests.ECM_AdminSectionTest" class="method navigator-link" hash-for-method="verifyAddNewUserFunctionality">verifyAddNewUserFunctionality</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.ipacs.qa.ecm.tests.ECM_AdminSectionTest" class="method navigator-link" hash-for-method="verifySearchBoxInUserLoginHistory">verifySearchBoxInUserLoginHistory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -127,35 +127,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAddNewUserFunctionality">
-                  </a> <!-- verifyAddNewUserFunctionality -->
-                  <span class="method-name">verifyAddNewUserFunctionality</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;datepicker-days&apos;]//th[@class=&apos;datepicker-switch&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5c3b74ae6861603b3e47022a8b07cfdb, findElement {value=//div[@class=&apos;datepicker-days&apos;]//th[@class=&apos;datepicker-switch&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ABHISH~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56217/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c3b74ae6861603b3e47022a8b07cfdb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at com.ipacs.qa.ecm.pages.ECM_AdminSection.selectDate(ECM_AdminSection.java:168)
-	at com.ipacs.qa.ecm.pages.ECM_AdminSection.addNewUser(ECM_AdminSection.java:152)
-	at com.ipacs.qa.ecm.tests.ECM_AdminSectionTest.verifyAddNewUserFunctionality(ECM_AdminSectionTest.java:68)
+                  <a name="verifySearchBoxInUserLoginHistory">
+                  </a> <!-- verifySearchBoxInUserLoginHistory -->
+                  <span class="method-name">verifySearchBoxInUserLoginHistory</span>
+                  <div class="stack-trace">java.lang.RuntimeException: ❌ Failed to select date for field &apos;startdate&apos;
+	at com.ipacs.qa.ecm.pages.ECM_AdminSection.selectDateFromZebraDatePicker(ECM_AdminSection.java:545)
+	at com.ipacs.qa.ecm.pages.ECM_AdminSection.verifySearchBoxInUserLoginHistory(ECM_AdminSection.java:473)
+	at com.ipacs.qa.ecm.tests.ECM_AdminSectionTest.verifySearchBoxInUserLoginHistory(ECM_AdminSectionTest.java:162)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -182,6 +160,9 @@ Session ID: 5c3b74ae6861603b3e47022a8b07cfdb
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.RuntimeException: ❌ Could not navigate to expected month/year: july 2025
+	at com.ipacs.qa.ecm.pages.ECM_AdminSection.selectDateFromZebraDatePicker(ECM_AdminSection.java:528)
+	... 28 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -191,7 +172,7 @@ Session ID: 5c3b74ae6861603b3e47022a8b07cfdb
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\abhishek.kumar\AppData\Local\Temp\testng-eclipse-222535360\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\abhishek.kumar\AppData\Local\Temp\testng-eclipse-993416572\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -242,14 +223,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAddNewUserFunctionality')
+data.setCell(0, 1, 'verifySearchBoxInUserLoginHistory')
 data.setCell(0, 2, 'com.ipacs.qa.ecm.tests.ECM_AdminSectionTest')
-data.setCell(0, 3, 29804);
+data.setCell(0, 3, 23075);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -282,17 +263,17 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPageObject</span>
-                <span class="method-start">8957 ms</span>
+                <span class="method-start">7306 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyAddNewUserFunctionality</span>
-                <span class="method-start">9014 ms</span>
+                <span class="method-name">verifySearchBoxInUserLoginHistory</span>
+                <span class="method-start">7356 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38830 ms</span>
+                <span class="method-start">30575 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
