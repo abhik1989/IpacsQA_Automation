@@ -7,7 +7,6 @@ import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ipacs.qa.baseclass.TestBase;
 import com.ipacs.qa.utilities.ConfigUtil;
+import com.ipacs.qa.utilities.DatePickerUtil;
 import com.ipacs.qa.utilities.ExcelReader;
 import com.ipacs.qa.utilities.WaitUtil;
 
@@ -470,83 +470,19 @@ public class ECM_AdminSection extends TestBase {
 	}
 
 	public void verifySearchBoxInUserLoginHistory() {
-	    selectDateFromZebraDatePicker("startdate", "01", "August", "2025");
+	    // Select start date (past)
+	    DatePickerUtil.selectDateFromZebraDatePicker("startdate", "15", "July", "2025");
 
-	    // Wait for enddate to become enabled (optional: check via JS or wait)
-	    WaitUtil.waitForSeconds(10); 
-	    selectDateFromZebraDatePicker("enddate", "20", "August", "2025");
+	    // Select end date (future)
+	    DatePickerUtil.selectDateFromZebraDatePicker("enddate", "20", "August", "2025");
+	    WaitUtil.waitForSeconds(2);
 
-	    driver.findElement(By.id("NewSearchBtnHistory")).click();
+	    newSearchBtnHistory.click();
+	    WaitUtil.waitForSeconds(3);
 	}
 
 
 
-
-	public static void selectDateFromZebraDatePicker(String inputFieldId, String expectedDay, String expectedMonth, String expectedYear) {
-	    try {
-	        System.out.println("➡️ Trying to select date for input field: " + inputFieldId);
-
-	        // Find calendar icon
-	        WebElement calendarIcon = driver.findElement(By.xpath(
-	            "//input[@id='" + inputFieldId + "']/parent::span[contains(@class,'Zebra_DatePicker_Icon_Wrapper')]/button"));
-
-	        System.out.println("✅ Calendar icon found. Clicking...");
-	        calendarIcon.click();
-
-	        WaitUtil.waitForSeconds(5); // wait for calendar to appear
-
-	        expectedMonth = expectedMonth.trim().toLowerCase();
-	        expectedYear = expectedYear.trim();
-	        expectedDay = String.valueOf(Integer.parseInt(expectedDay)); // remove leading zero
-
-	        int attempts = 0;
-	        boolean found = false;
-
-	        while (attempts++ < 24) {
-	            WebElement caption = driver.findElement(By.cssSelector("td.dp_caption"));
-	            String captionText = caption.getText().trim().replace(",", "").toLowerCase();
-	            System.out.println("📅 Current caption: " + captionText);
-
-	            String[] parts = captionText.split("\\s+");
-	            if (parts.length >= 2) {
-	                String actualMonth = parts[0];
-	                String actualYear = parts[1];
-
-	                if (actualMonth.equals(expectedMonth) && actualYear.equals(expectedYear)) {
-	                    found = true;
-	                    System.out.println("✅ Reached expected month and year.");
-	                    Thread.sleep(500);
-	                    break;
-	                }
-	            }
-
-	            driver.findElement(By.cssSelector("td.dp_next")).click();
-	            Thread.sleep(300);
-	        }
-
-	        if (!found) {
-	            throw new RuntimeException("❌ Could not navigate to expected month/year: " + expectedMonth + " " + expectedYear);
-	        }
-
-	        List<WebElement> dayCells = driver.findElements(By.xpath(
-	            "//table[contains(@class, 'dp_daypicker')]//td[normalize-space(text())='" + expectedDay + "']"));
-
-	        System.out.println("📅 Found " + dayCells.size() + " day cells for day: " + expectedDay);
-
-	        if (!dayCells.isEmpty()) {
-	            dayCells.get(0).click();
-	            System.out.println("✅ Date selected: " + expectedDay + " " + expectedMonth + " " + expectedYear);
-	        } else {
-	            throw new NoSuchElementException("❌ Day " + expectedDay + " not found.");
-	        }
-
-	    } catch (Exception e) {
-	        e.printStackTrace(); // log the real error
-	        throw new RuntimeException("❌ Failed to select date for field '" + inputFieldId + "'", e);
-	    }
-	}
-
-	
 
 	public void EditUserWithUserRole() {
 		editUserLink.click();
